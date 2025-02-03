@@ -1,0 +1,87 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+:root {
+    --background-color: #3ba7d5;;
+    --content-color: #411717;
+    --accent-color-blue: #3ba7d5;
+    --accent-color-green: #69a332;
+
+    --text-header-color: #f5fbfc;
+    --text-normal-color: #000000;
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--background-color);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.featured-subscribe {
+    clear: both;
+    color: #fff;
+    background-color: #121212;
+    overflow: hidden;
+    padding: 25px 0 23px;
+    margin-bottom: 40px;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+.featured-subscribe .widget-title{
+    font-size: 20px;
+    /* display: inline-block;  */
+    float: left;
+    text-align: left;
+    margin: 0;
+    margin-left: 100px;
+    width: 400px;
+    height: 52px;
+    line-height: 52px;
+    color: #fff;
+}
+
+.email-input {
+    color: #121212;
+    font-size: 15px;
+    line-height: 48px;
+    font-family: Georgia, times new roman, Times, serif;
+    font-style: italic;
+    text-align: left;
+    border: none;
+    padding: 0 15px;
+    margin: 0;
+    width: 250px;
+    height: 48px;
+}
+
+.email-submit {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    background-color: transparent !important;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: right; 
+    height: 48px;
+    line-height: 48px;
+}
