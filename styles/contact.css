@@ -70,7 +70,7 @@
 }
 
 .submit-btn:hover {
-    background: #e2d515;;
+    background: #e2d515;
 }
 
 /* Success Message */
@@ -87,4 +87,38 @@
         width: 95%;
         padding: 15px;
     }
+}
+
+/* About */
+.heading {
+
+    background: #ffc107;
+    background: conic-gradient(from 315deg, #ffc107, #FCEEA9);
+    color: rgb(0, 0, 0);
+    border: 3px solid #f1ea09;
+
+    font-weight: bold;
+    margin-top: 50px;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    /* padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center; */
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding-bottom: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.about-content {
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 20px;
 }

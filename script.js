@@ -28,7 +28,7 @@ async function sendApiRequest(keyword = "") {
     try {
         const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=4a34bfe78c07490d8ad03d99a72ae206`);
         console.log(response);
-        
+
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -37,14 +37,14 @@ async function sendApiRequest(keyword = "") {
         console.log("Original Data:", data);
 
         // Filter recipes based on keyword in title
-        let filteredResults = data.results.filter(recipe => 
+        let filteredResults = data.results.filter(recipe =>
             recipe.title.toLowerCase().includes(keyword.toLowerCase())
         );
-        
+
 
         console.log("Filtered Data:", filteredResults);
         useApiData({ results: filteredResults });
-    } 
+    }
     catch (error) {
         console.error("Error fetching data:", error);
         document.querySelector("#content").innerHTML = "<p>Failed to fetch recipes. Please try again later.</p>";
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Prevent page reload
 
         let isValid = true;
-        const name = document.getElementById("name");
+        const username = document.getElementById("username");
         const email = document.getElementById("email");
         const message = document.getElementById("message");
 
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         // Validate each field
-        validateField(name, "Full name is required.");
+        validateField(username, "Full name is required.");
         validateField(email, "Email is required.");
         validateField(message, "Message cannot be empty.");
 
@@ -119,3 +119,36 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+//email
+
+// document.addEventListener("DOMContentLoaded", function () {
+
+//     emailjs.init("G1iXnAYSXJAFx1QEJ"); // Replace with your EmailJS User ID
+const form = document.getElementById("contact-form");
+const username = form.elements.username.value;
+const email = form.elements.email.value;
+const message = form.elements.message.value;
+
+    
+
+form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    
+    // const formData = {
+    //     name: document.querySelector("input[name='name']").value,
+    //     email: document.querySelector("input[name='email']").value,
+    //     message: document.querySelector("textarea[name='message']").value,
+    // };
+    
+
+    emailjs.sendForm("service_kw2q78w", "template_xrnkrzg", this)
+        .then(function () {
+            alert("Email sent successfully!");
+            form.reset();
+        }, function (error) {
+            alert("Failed to send email. Try again.");
+            console.log(error);
+        });
+});
+document.addEventListener("DOMContentLoaded", () => emailjs.init("G1iXnAYSXJAFx1QEJ"))
