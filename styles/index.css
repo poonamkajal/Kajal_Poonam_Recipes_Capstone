@@ -22,7 +22,6 @@ html {
 }
 
 body {
-    /* background-color: var(--background-color); */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -63,7 +62,7 @@ h5 {
 .featured-quote {
     clear: both;
     /* color: #000000; */
-    background-image: url("/Images/marion-botella-uaHShoIDGeo-unsplash.jpg");
+    background-image: url("/Images/tiard-schulz-V5Bqsot6UCg-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -117,14 +116,11 @@ h5 {
 
 .featured-recipe2 {
     clear: both;
-    /* color: #000000; */
     background-image: url("/Images/vd-photography-K_oTk-SAgOA-unsplash.jpg");
-    /* filter: blur(5px); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    /* height: 40vh; */
     overflow: hidden;
     padding: 100px 0 100px;
     margin-bottom: 40px;
@@ -144,14 +140,11 @@ h5 {
 }
 .featured-recipe3 {
     clear: both;
-    /* color: #000000; */
     background-image: url("/Images/viktor-forgacs-WmKXu-bzygo-unsplash.jpg");
-    /* filter: blur(5px); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    /* height: 40vh; */
     overflow: hidden;
     padding: 100px 0 100px;
     margin-bottom: 40px;
@@ -243,7 +236,7 @@ h5 {
     display: grid;
     column-gap: 2.5em;
     row-gap: 2rem;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
@@ -251,13 +244,18 @@ h5 {
 
 }
 
-/* img {
+.link1 img {
     background-position: center;
-} */
+    width: 400px;
+    height: 300px;
+    /* margin-bottom: 30px; */
+}
 
 .card-group .card {
     width: 100%;
     margin: 0;
+    /* border-radius: 10%; */
+    margin-bottom: 30px;
     text-align: center;
     transition: all .2s ease-in-out;
     position: relative;
@@ -278,6 +276,10 @@ a:visited {
     text-decoration: none;
 }
 
+#loginregister{
+    margin-right: 40px;
+}
+
 .card-title {
     display: block;
     text-align: center;
@@ -286,54 +288,52 @@ a:visited {
     font-size: 18px;
 }
 
-.footer-clean {
-    padding-top: 50px;
-    color: #000000;
+.footer-area {
+    background-color: #ffc107;
+    padding: 20px 0;
     text-align: center;
 }
 
-.footer-clean h3 {
-    margin-top: 20px;
-    margin-bottom: 12px;
-    font-weight: bold;
-    font-size: 16px;
+.footer-logo img {
+    max-width: 120px;
+    height: auto;
 }
 
-.footer-clean ul {
-    padding: 0;
-    list-style: none;
-    line-height: 1.6;
+/* Social Media Icons */
+.footer-social-info a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 22px;
+    color: #333; 
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social-info a:hover {
+    color: #000; 
+}
+
+/* Copyright Text */
+.footer-area small {
     font-size: 14px;
-    margin-bottom: 0;
+    color: #444;
+    display: block;
+    margin-top: 10px;
 }
 
-.footer-clean ul a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-.footer-clean ul a:hover {
-    opacity: 1;
-}
-
-.footer-clean .item.social {
-    text-align: center;
-}
-
-/* @media (max-width:767px) {
-    .footer-clean .item {
-        text-align: center;
-        
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-area {
+        padding: 15px 0;
     }
-}
- */
 
-.copyright {
-    margin-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 15px;
+    .footer-logo img {
+        max-width: 100px;
+    }
+
+    .footer-social-info a {
+        font-size: 18px;
+        margin: 0 5px;
+    }
 }
 
 .card {
@@ -403,4 +403,8 @@ h1.pagetitle {
 .input-group .btn {
     position: relative;
     z-index: 2;
+}
+
+.input-group1{
+    margin-right: 30px;
 }

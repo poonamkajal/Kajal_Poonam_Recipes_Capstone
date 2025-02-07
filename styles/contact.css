@@ -1,0 +1,90 @@
+/* Contact Form Container */
+.contact-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+
+}
+
+/* Form Fields */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-family: proximanova, Arial, Helvetica, Geneva, sans-serif;
+
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-group textarea {
+    resize: none;
+}
+
+.input-group small.error-message {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #ffc107;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #e2d515;;
+}
+
+/* Success Message */
+#success-message {
+    margin-top: 10px;
+    color: rgb(1, 1, 1);
+    font-weight: bold;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .contact-container {
+        width: 95%;
+        padding: 15px;
+    }
+}
