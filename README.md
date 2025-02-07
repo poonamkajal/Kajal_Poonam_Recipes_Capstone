@@ -1,5 +1,3 @@
-# CapstoneProject-Recipes
-
 # 🍽️ Recipes Website
 
 ## 📖 Overview
