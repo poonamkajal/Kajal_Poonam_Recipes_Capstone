@@ -120,35 +120,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-//email
-
-// document.addEventListener("DOMContentLoaded", function () {
-
-//     emailjs.init("G1iXnAYSXJAFx1QEJ"); // Replace with your EmailJS User ID
+//Email
+const formMessage = document.getElementById("formMessage");
 const form = document.getElementById("contact-form");
 const username = form.elements.username.value;
 const email = form.elements.email.value;
-const message = form.elements.message.value;
-
-    
+const message = form.elements.message.value;  
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
-    
-    // const formData = {
-    //     name: document.querySelector("input[name='name']").value,
-    //     email: document.querySelector("input[name='email']").value,
-    //     message: document.querySelector("textarea[name='message']").value,
-    // };
-    
-
     emailjs.sendForm("service_kw2q78w", "template_xrnkrzg", this)
-        .then(function () {
-            alert("Email sent successfully!");
-            form.reset();
-        }, function (error) {
-            alert("Failed to send email. Try again.");
-            console.log(error);
-        });
+    .then(response => {
+        formMessage.style.display = "block";
+        formMessage.style.color = "green";
+        formMessage.textContent = "Email sent successfully!";
+        form.reset();
+    })
+    .catch(error => {
+        formMessage.style.display = "block";
+        formMessage.style.color = "red";
+        formMessage.textContent = "Failed to send email. Please try again.";
+        console.error("EmailJS Error:", error);
+    });
 });
 document.addEventListener("DOMContentLoaded", () => emailjs.init("G1iXnAYSXJAFx1QEJ"))
