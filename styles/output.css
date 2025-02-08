@@ -62,7 +62,7 @@ h5 {
 .featured-quote {
     clear: both;
     /* color: #000000; */
-    background-image: url("/Images/tiard-schulz-V5Bqsot6UCg-unsplash.jpg");
+    background-image: url("../Images/tiard-schulz-V5Bqsot6UCg-unsplash.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
