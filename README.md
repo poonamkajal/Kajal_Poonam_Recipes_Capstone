@@ -13,7 +13,7 @@ A dynamic and interactive recipes website that allows users to search for recipe
 - **Frontend:** HTML, CSS, JavaScript  
 - **API:** Spoonacular 
 - **Email Service:** EmailJS  
-- **Styling:** Bootstrap / Tailwind CSS (whichever you're using)  
+- **Styling:** Bootstrap / Tailwind CSS  
 
 ## 🚀 Future Updates
 Here are some planned improvements for future versions:  
